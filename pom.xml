@@ -53,11 +53,6 @@
 
 		<dependency>
 			<groupId>cn.rongcapital.mc2</groupId>
-			<artifactId>me-ewp-api</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>cn.rongcapital.mc2</groupId>
 			<artifactId>me-ewa-api</artifactId>
 		</dependency>
 

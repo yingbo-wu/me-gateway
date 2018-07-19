@@ -1,6 +1,17 @@
 [
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignApi.create",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignNameCheckIn",
+		"message": {
+			"0": "校验名称成功",
+			"-1": "校验名称失败",
+			"4001": "没有传递name参数",
+			"4002": "name参数格式不正确",
+			"4003": "name参数不能超过30个字符",
+			"4401": "没有传递tenantId参数"
+		}
+	},
+	{
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignCreateIn",
 		"message": {
 			"0": "创建成功",
 			"-1": "创建失败",
@@ -8,16 +19,14 @@
 			"4001": "name参数不能为空",
 			"4002": "name参数不能超过15字符",
 			"4003": "description参数不能超过100字符",
-			"4004": "tenantId参数不能为空",
-			"4005": "bizTimeFlag参数不能为空",
-			"4006": "bizStartTime参数不能为空",
-			"4007": "bizEndTime参数不能为空",
-			"4008": "userId参数不能为空",
-			"4009": "token参数不能为空"
+			"4004": "bizTimeFlag参数不能为空",
+			"4401": "tenantId参数不能为空",
+			"4402": "userId参数不能为空",
+			"4403": "userName参数不能为空"
 		}
 	},
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignApi.save",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignCreateForCdpIn",
 		"message": {
 			"0": "创建成功",
 			"-1": "创建失败",
@@ -25,16 +34,15 @@
 			"4001": "name参数不能为空",
 			"4002": "name参数不能超过15字符",
 			"4003": "description参数不能超过100字符",
-			"4004": "tenantId参数不能为空",
-			"4005": "bizTimeFlag参数不能为空",
-			"4006": "bizStartTime参数不能为空",
-			"4007": "bizEndTime参数不能为空",
-			"4008": "userId参数不能为空",
-			"4009": "data参数不能为空"
+			"4004": "bizTimeFlag参数不能为空",
+			"4005": "data参数不能为空",
+			"4401": "tenantId参数不能为空",
+			"4402": "userId参数不能为空",
+			"4403": "userName参数不能为空"
 		}
 	},
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignApi.update",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignUpdateIn",
 		"message": {
 			"0": "更新成功",
 			"-1": "更新失败",
@@ -43,33 +51,34 @@
 			"4002": "name参数不能为空",
 			"4003": "name参数不能超过15字符",
 			"4004": "description参数不能超过100字符",
-			"4005": "tenantId参数不能为空",
-			"4006": "bizTimeFlag参数不能为空",
-			"4007": "bizStartTime参数不能为空",
-			"4008": "bizEndTime参数不能为空",
-			"4009": "userId参数不能为空"
+			"4005": "bizTimeFlag参数不能为空",
+			"4401": "tenantId参数不能为空",
+			"4402": "userId参数不能为空",
+			"4403": "userName参数不能为空"
 		}
 	},
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignApi.delete",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignDeleteIn",
 		"message": {
 			"0": "删除成功",
 			"-1": "删除失败",
 			"4000": "body不能为空",
-			"4001": "没有传递tenantId参数",
-			"4002": "没有传递updateUser参数",
-			"4003": "没有传递campaignId参数",
+			"4001": "没有传递id参数",
+			"4401": "没有传递tenantId参数",
+			"4402": "没有传递userId参数",
+			"4403": "没有传递userName参数",
 			"5001": "不能删除其他租户的活动",
 			"5002": "活动当前不是草稿状态"
 		}
 	},
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignApi.findOne",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignFindOneIn",
 		"message": {
 			"0": "获取成功",
 			"-1": "获取失败",
-			"4000": "没有传递id参数",
-			"4001": "没有传递tenantId参数",
+			"4000": "body不能为空",
+			"4001": "没有传递id参数",
+			"4401": "没有传递tenantId参数",
 			"5001": "活动不存在"
 		}
 	},
@@ -78,58 +87,40 @@
 		"message": {
 			"0": "获取成功",
 			"-1": "获取失败",
-			"4001": "tenantId参数不能为空",
-			"4002": "userId参数不能为空"
+			"4000": "body不能为空",
+			"4401": "tenantId参数不能为空",
+			"4402": "userId参数不能为空"
 		}
 	},
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignApi.total",
-		"message": {
-			"0": "获取成功",
-			"-1": "获取失败",
-			"4001": "tenantId参数不能为空",
-			"4002": "userId参数不能为空"
-		}
-	},
-	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignDiagramApi.save",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignDiagramSaveIn",
 		"message": {
 			"0": "保存成功",
 			"-1": "保存失败",
 			"4000": "body不能为空",
-			"4001": "没有传递tenantId参数",
-			"4002": "没有传递updateUser参数",
-			"4003": "没有传递campaignId参数",
-			"4004": "没有传递designData参数",
-			"4005": "designData参数不是有效的json对象",
+			"4001": "没有传递id参数",
+			"4002": "没有传递diagramJson参数",
+			"4003": "diagramJson参数不是有效的json对象",
+			"4401": "没有传递tenantId参数",
+			"4402": "没有传递userId参数",
+			"4403": "没有传递userName参数",
 			"5001": "活动不存在",
 			"5002": "不能编辑其他租户的活动",
 			"5003": "活动当前不是草稿状态"
 		}
 	},
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignApi.checkName",
-		"message": {
-			"0": "校验名称成功",
-			"-1": "校验名称失败",
-			"4000": "没有传递tenantId参数",
-			"4001": "没有传递name参数",
-			"4002": "name参数格式不正确",
-			"4003": "name参数不能超过30个字符"
-		}
-	},
-	{
-		"key": "cn.rongcapital.mc2.me.ewp.api.CampaignFlowApi.publish",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignFlowPublishIn",
 		"message": {
 			"0": "启动成功",
 			"-1": "启动失败",
 			"4000": "body不能为空",
-			"4001": "没有传递tenantId参数",
-			"4002": "没有传递campaignId参数",
-			"4003": "没有传递segmentId参数",
-			"4004": "没有传递userId参数",
-			"4005": "没有传递startType参数",
-			"4006": "没有传递endType参数",
+			"4001": "没有传递id参数",
+			"4002": "没有传递startupMode参数",
+			"4003": "没有传递shutdownMode参数",
+			"4401": "没有传递tenantId参数",
+			"4402": "没有传递userId参数",
+			"4403": "没有传递userName参数",
 			"5001": "活动设计规则验证失败",
 			"5002": "发布启动任务调度失败",
 			"5003": "发布终止任务调度失败",
@@ -138,30 +129,24 @@
 		}
 	},
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.CampaignFlowApi.shutdown",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.CampaignFlowShutdownIn",
 		"message": {
 			"0": "终止成功",
 			"-1": "终止失败",
 			"4000": "body不能为空",
-			"4001": "没有传递campaignId参数",
+			"4001": "没有传递id参数",
+			"4401": "没有传递tenantId参数",
+			"4402": "没有传递userId参数",
+			"4403": "没有传递userName参数",
 			"5001": "终止活动不符合业务规则"
 		}
 	},
 	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.MaterialApi.find",
+		"key": "cn.rongcapital.mc2.me.cpm.api.dto.ComponentFindIn",
 		"message": {
 			"0": "获取成功",
 			"-1": "获取失败",
-			"4000": "没有传递id参数",
-			"4001": "没有传递tenantId参数"
-		}
-	},
-	{
-		"key": "cn.rongcapital.mc2.me.cpm.api.ComponentApi.find",
-		"message": {
-			"0": "获取成功",
-			"-1": "获取失败",
-			"4001": "tenantId参数不能为空"
+			"4401": "tenantId参数不能为空"
 		}
 	}
 ]
